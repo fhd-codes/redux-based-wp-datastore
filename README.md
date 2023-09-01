@@ -1,6 +1,10 @@
 # redux-based-wp-datastore
 This repo is a boilerplate for redux based custom wordpress datastores
 
+## Note:
+
+The datastore will be available only when the plugin is active and you are on the post editor page
+
 - To add a new custom datastore to your wordpress project, create a block using
 
 ```
