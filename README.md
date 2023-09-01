@@ -27,11 +27,11 @@ add_action( 'enqueue_block_editor_assets', 'plugin_enqueue_assets' );
 
 - Open your browser console and write the following lines:
 ```
-wp.data.select('<your-store-name>)
+wp.data.select('<your-store-name>')
 ```
 You will get to see the available selectors of your store
 
 ```
-wp.data.dispatch('<your-store-name>)
+wp.data.dispatch('<your-store-name>')
 ```
 You will get to see the available dispatch actions of your store
