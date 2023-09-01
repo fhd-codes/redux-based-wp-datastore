@@ -4,12 +4,13 @@
 
 import { createReduxStore, register } from '@wordpress/data';
 
-import reducers from './reducers';
+import reducer from './reducer';
 import * as selectors from "./selectors";
 import * as actions from "./actions";
 
+
 const store = createReduxStore('fhd/todos', {
-    reducers,
+    reducer,
     selectors,
     actions
 });
