@@ -5,14 +5,17 @@
  * Here, we are using switch case to update the states 
 */
 
-const reducers = (state=DEFAULT_STATE, action) => {
-    switch (action.type) {
-      case ADD_TODO :
-        return { ...state, todo_items: [...state.todo_items, action.todo] };
-  
-      default:
-        return state;
-    }
-};
-  
-export default reducers;
+import { createReduxStore, register } from '@wordpress/data';
+
+import reducer from './reducer';
+import * as selectors from "./selectors";
+import * as actions from "./actions";
+
+
+const store = createReduxStore('fhd/todos', {
+    reducer,
+    selectors,
+    actions
+});
+
+register(store);
